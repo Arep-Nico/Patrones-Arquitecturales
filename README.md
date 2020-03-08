@@ -12,7 +12,7 @@ Se requiere maven y Java version 8 como minimo.
 
 ## Diseño
 
-La documentacion del Api de **Http Server** esta a continuacion [aqui](documents/Laboratorio_5_Arep.pdf).
+La documentacion del Api de **Spring Boot** esta a continuacion [aqui](documents/Laboratorio_5_Arep.pdf).
 
 ## Documentacion de Endpoins
 ```
