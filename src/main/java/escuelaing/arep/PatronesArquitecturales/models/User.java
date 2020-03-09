@@ -18,5 +18,5 @@ public class User {
   Long id;
   String name;
   String lastName;
-  String age;
+  int age;
 }

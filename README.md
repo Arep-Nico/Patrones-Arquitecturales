@@ -33,16 +33,24 @@ La documentacion del Api de **Spring Boot** esta a continuacion [aqui](documents
 
 ## Running
  Para empaquetar el proyecto de Java 
- > mvn package
+ > ``` mvn package ```
  
  Para correr los test
- > mvn test 
+ > ``` mvn test ```
  
  Para ejecutar Spring Boot
- > mvn spring-boot:run
+ > ``` mvn spring-boot:run ```
  
  Para generar la documentacion de Java
- > mvn javadoc:javadoc
+ > ``` mvn javadoc:javadoc ```
+
+### **Ejecucion sin mvn instalado**:
+
+ **MacOS/Linux**:
+ > ``` ./mvnw spring-boot:run ```
+
+ **Windows**:
+ > ``` mvnw spring-boot:run ```
 
 
 ## Desarrollado
