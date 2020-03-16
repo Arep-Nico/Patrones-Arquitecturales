@@ -14,6 +14,10 @@ Se requiere maven y Java version 8 como minimo.
 
 La documentacion del Api de **Spring Boot** esta a continuacion [aqui](documents/Laboratorio_5_Arep.pdf).
 
+Diseño del tutorial en S3 [Aqui](http://patronesarquitecturales.s3-website-us-east-1.amazonaws.com)
+
+Tutorial [Aqui](https://github.com/Arep-Nico/arep-app)
+
 ## Documentacion de Endpoins
 ```
   Gets:
