@@ -33,7 +33,7 @@ public class UserController {
   @GetMapping
   public ResponseEntity<?> getAllUsers() {
     try {
-      return new ResponseEntity<>(us.findAllUsers(), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.findAllUsers(), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
@@ -43,7 +43,7 @@ public class UserController {
   @GetMapping("/{name}")
   public ResponseEntity<?> getUserByName(@PathVariable String name) {
     try {
-      return new ResponseEntity<>(us.findUserByName(name), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.findUserByName(name), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
@@ -53,7 +53,7 @@ public class UserController {
   @GetMapping("/{name}.{lastName}")
   public ResponseEntity<?> getUserByNameAndLastName(@PathVariable String name, @PathVariable String lastName) {
     try {
-      return new ResponseEntity<>(us.findUserByNameAndLastName(name, lastName), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.findUserByNameAndLastName(name, lastName), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
@@ -63,7 +63,7 @@ public class UserController {
   @PostMapping
   public ResponseEntity<?> createUser(@RequestBody User user) {
     try {
-      return new ResponseEntity<>(us.createUser(user), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.createUser(user), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
@@ -73,7 +73,7 @@ public class UserController {
   @PutMapping
   public ResponseEntity<?> updateUser(@RequestBody User user) {
     try {
-      return new ResponseEntity<>(us.updateUser(user), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.updateUser(user), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
@@ -83,7 +83,7 @@ public class UserController {
   @DeleteMapping("/{id}")
   public ResponseEntity<?> deleteUser(@PathVariable Long id) {
     try {
-      return new ResponseEntity<>(us.deleteUser(id), HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(us.deleteUser(id), HttpStatus.OK);
     } catch (Exception ex) {
       Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
       return new ResponseEntity<>("Not found", HttpStatus.NOT_FOUND);
